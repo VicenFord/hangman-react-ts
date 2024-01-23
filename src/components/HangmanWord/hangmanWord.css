@@ -1,0 +1,9 @@
+#hangmanWordDiv{
+    display: flex;
+    gap: .2em;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: black;
+}

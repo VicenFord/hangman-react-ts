@@ -1,0 +1,40 @@
+#keyboardDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: .5rem;
+}
+
+.key{
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: bisque;
+    background: none;
+    aspect-ratio: 1 / 1;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.key:hover:not(.active):not(.inactive),
+.key:focus:not(.active):not(.inactive){
+    background-color: rgb(185, 149, 239);
+}
+
+.key.active{
+    background-color: rgb(152, 96, 235);
+    color: white;
+    cursor: default;
+    pointer-events: none;
+}
+
+.key.inactive{
+    opacity: .2;
+    cursor: default;
+    pointer-events: none;
+}
+
+
